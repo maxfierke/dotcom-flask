@@ -5,6 +5,11 @@ body {
     color: #c3c3c3;
 }
 
+code {
+    color: #f80;
+    background-color: #232323;
+}
+
 /* BOOTSTRAP OVERRIDES */
 .label a {
     color: #fff;
