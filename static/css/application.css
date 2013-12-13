@@ -1,0 +1,161 @@
+body {
+    padding-top: 70px;
+    background-image: url('/static/images/zwartevilt.png');
+    background-size: 531px 337px;
+    color: #c3c3c3;
+}
+
+/* BOOTSTRAP OVERRIDES */
+.label a {
+    color: #fff;
+}
+
+.close:hover, .close:focus {
+    color: #c3c3c3;
+}
+
+.form-control {
+    color: #c3c3c3;
+    background-color: #232323;
+    border-color: #353535;
+}
+
+.panel-primary {
+    background-color: #151515;
+    border-color: #272727;
+}
+
+/* SITE SPECIFIC CLASSES */
+.dropdown-contact {
+    min-width: 540px;
+}
+
+.ebleu {
+    color: #0390c4;
+}
+
+.footer-page {
+    padding-bottom: 20px;
+}
+
+.navbar {
+    border-bottom: 1px solid #151515;
+}
+
+.navbar .navbar-nav>li.active>a,
+.navbar .navbar-nav>li.active>a:hover {
+    background-color: #0390c4;
+}
+
+.navbar .navbar-nav .hidden-xs {
+    display: inline-block !important;
+}
+
+.js-tooltip {
+    text-decoration: none;
+}
+
+.jumbotron-about {
+    background-image: url('/static/images/coffee_stars_small.jpg'), url('/static/images/watercooler_sample.png');
+    background-position: right center, left center;
+    background-size: contain, cover;
+    background-repeat: no-repeat, no-repeat;
+    margin-bottom: 0;
+}
+
+.jumbotron-about h1,
+.jumbotron-about h2 {
+    background-color: rgba(34,34,34,0.9);
+}
+
+.panel-project {
+    transition: background-color 0.5s linear;
+}
+
+.panel-project:hover {
+    background-color: #353535;
+}
+
+.project-title {
+    margin-top: 0;
+}
+
+.project-img {
+    margin-bottom: 1.2em;
+}
+
+.socialnetworks img {
+    margin-right: 10px;
+}
+
+.socialnetworks li {
+    margin-bottom: 5px;
+}
+
+.socialnetworks>li>a {
+    color: #efefef;
+    text-decoration: none;
+}
+.socialnetworks>li>a:hover {
+    color: #0390c5;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    body {
+        background-image: url('/static/images/zwartevilt@2X.jpg');
+        background-size: 1062px 674px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .navbar .navbar-nav .hidden-xs {
+        display: none !important;
+    }
+    .navbar .navbar-nav .visible-xs {
+        display: inline-block !important;
+    }
+
+    .jumbotron-about {
+        background-image: url('/static/images/watercooler_sample.png');
+        background-position: left center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .dl-tools dd {
+        padding-left: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .jumbotron-about {
+        padding: 30px !important;
+    }
+    .dl-tools {
+        margin-bottom: 0;
+    }
+    .dl-tools dt {
+        width: auto;
+    }
+    .dl-tools dd {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .jumbotron-about h1 {
+        font-size: 28px;
+    }
+    .jumbotron-about h2 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .jumbotron-about h1 {
+        font-size: 34px;
+    }
+    .jumbotron-about h2 {
+        font-size: 28px;
+    }
+}

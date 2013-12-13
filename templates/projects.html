@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+{% block content %}
+<div id="js-project-filter" class="btn-toolbar" role="toolbar">
+    <div class="btn-group btn-group-sm">
+        <span class="btn">Filter:</span>
+    </div>
+    <div class="btn-group btn-group-sm">
+        <a href="#all" id="all" class="btn btn-primary">All</a>
+        <a href="#current-projects" id="current-projects" class="btn btn-default js-filter">Current</a>
+        <a href="#past-projects" id="past-projects" class="btn btn-default js-filter">Past</a>
+    </div>
+    <div class="btn-group btn-group-sm">
+        <a href="#web" id="web" class="btn btn-default js-filter">Web</a>
+        <a href="#android" id="android" class="btn btn-default js-filter">Android</a>
+        <a href="#desktop" id="desktop" class="btn btn-default js-filter">Desktop</a>
+        <a href="#linux" id="linux" class="btn btn-default js-filter">Linux</a>
+        <a href="#crypto" id="crypto" class="btn btn-default js-filter">Crypto</a>
+    </div>
+</div>
+<hr />
+{% for project in projects %}
+<section id="{{ project.project_id }}" class="panel panel-default panel-project {% for category in project.categories %}{{ category }} {% endfor %}">
+    <div class="panel-body">
+        <div class="col-xs-3">
+            <img class="img-responsive"
+                 src="{% if project.img.src is none %}/static/images/project-noimg.png{% else %}{{ project.img.src }}{% endif %}"
+                 alt="{{ project.name }}" />
+        </div>
+        <div class="col-xs-9">
+            <h4><span class="ebleu">{{ project.name }}</span><small class="text-muted"> - {{ project.status }}</small></h4>
+            <p>{{ project.start_date }}-{% if project.end_date is none %}present{% else %}{{ project.end_date }}{% endif %}</p>
+            <p>{{ project.description|safe }}</p>
+            {% for link in project.links %}
+            <p><a href="{{ link.href }}">{{ link.title }}</a></p>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endfor %}
+{% endblock %}

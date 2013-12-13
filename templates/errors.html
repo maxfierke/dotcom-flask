@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="/static/css/bootstrap.min.css" />
+<title>{{ status_code }} - Max Fierke</title>
+<style type="text/css">.container {max-width: 700px;}</style>
+</head>
+<body>
+<h1 class="text-center">Error {{ status_code }}: <small class="text-danger">{{ message }}</small></h1>
+<div class="container">
+{% block content %}
+	Something is up with the server. Probably something misconfigured. This is usually temporary. Please try again later. If this keeps happening, send me a quick tweet on the Twitters (<a href="https://twitter.com/m4xm4n">@m4xm4n</a>).
+{% endblock %}
+</div>
+</body>
+</html>
+

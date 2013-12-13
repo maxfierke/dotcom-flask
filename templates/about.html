@@ -1,0 +1,152 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="jumbotron jumbotron-about">
+    <div class="row">
+        <div class="col-lg-9 col-md-8 col-sm-9 col-xs-12">
+            <h1>Hey, how's it going?<br /> My name is <a href="#"  class="js-tooltip" data-title="<h4>pronounced <strong>feer-kee</strong> or <strong>feer-kuh</strong></h4>" data-placement="right" data-html="true"><strong>Max Fierke</strong></a>.</h1>
+            <h2>I'm a <span class="text-warning">software developer</span> who works in <span class="text-success">web</span> and <span class="text-success">Linux</span> development.</h2>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-8">
+        <h3><span class="white">About</span> <span class="ebleu">Me</span></h3>
+        <div class="panel panel-primary">
+            <div class="panel-body">
+                <p>I reside in Minneapolis, MN and I'm currently pursuing a B.A. in Computer Science at the <a href="http://umn.edu">University of Minnesota</a>.</p>
+                <p>Here are few things about me:
+                    <ul>
+                        <li>I'm well-versed in quite a few languages. (C/C++, C#, Java, PHP, Python, JavaScript, to name a few).</li>
+                        <li>If one can put Linux on it, I've put Linux on it (and may have even helped put Linux on it, or improved the state of Linux on it).</li>
+                        <li>I'm a caffeine-powered organism.</li>
+                        <li><a href="https://github.com/maxfierke/">GitHub</a> and <a href="http://rapgenius.com">Rap Genius</a> are my favorite applications.</li>
+                        <li>I'm attracted to anything having to do with cryptography. I love me a nicely designed Feistel network block cipher.</li>
+                        <li>My favorite text editor is <a href="http://sublimetext.com">Sublime Text</a>.</li>
+                        <li>My favorite thing to do, besides programming, is watch British comedy.</li>
+                        <li>I'm a huge Monty Python fan, which is one of the reasons why <a href="http://blog.maxfierke.com/post/68328630505/why-i-like-python">Python is my favorite language</a>.</li>
+                    </ul>
+                </p>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <h3><span class="white">Tools I've</span> <span class="ebleu">Worked With</span> <small class="text-muted">(not exhaustive)</small></h3>
+        <div class="panel panel-primary">
+            <div class="panel-body">
+                <div class="col-xs-6">
+                    <dl class="dl-tools">
+                        <dt>Web Servers</dt>
+                            <dd>Apache</dd>
+                            <dd>Nginx</dd>
+                            <dd>IIS</dd>
+                        <dt>Web Frameworks</dt>
+                            <dd>Symfony 2 <span class="label label-primary"><a href="/projects/#openskedge">OpenSkedge</a></span></dd>
+                            <dd>Django</dd>
+                            <dd>Express.js</dd>
+                            <dd>Sails.js <span class="label label-info"><a href="/projects/#watercooler">WaterCooler</a></span></dd>
+                            <dd>Angular.js</dd>
+                            <dd>ASP.NET MVC 4</dd>
+                            <dd>Flask <span class="label label-default">this site</span></dd>
+                    </dl>
+                </div>
+                <div class="col-xs-6">
+                    <dl class="dl-tools">
+                        <dt>Database Servers</dt>
+                            <dd>MySQL/MariaDB <span class="label label-primary"><a href="/projects/#openskedge">OpenSkedge</a></span></dd>
+                            <dd>PostgreSQL</dd>
+                            <dd>Oracle</dd>
+                            <dd>MongoDB <span class="label label-info"><a href="/projects/#watercooler">WaterCooler</a></span></dd>
+                        <dt>Development Utilites</dt>
+                            <dd>Git (<a href="https://github.com/maxfierke/">checkout my GitHub</a>)</dd>
+                            <dd>Vagrant</dd>
+                            <dd>Chef</dd>
+                        <dt>"Cloud" Deployment Platforms</dt>
+                            <dd>Amazon Web Services</dd>
+                            <dd>PagodaBox <span class="label label-primary"><a href="/projects/#openskedge">OpenSkedge</a></span></dd>
+                            <dd>Heroku</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <h3><span class="white">Latest</span> <span class="ebleu">Project</span></h3>
+        <div class="panel panel-primary">
+            <div id="latest-project" class="panel-body">
+                <h4 class="project-title"><a href=""></a></h4>
+                <img class="project-img img-responsive hide" src="" />
+                <ul class="project-tags list-inline"></ul>
+                <hr />
+                <p class="project-shortdesc"></p>
+            </div>
+        </div>
+        <h3><span class="white">Personal</span> <span class="ebleu">Stats</span></h3>
+        <div class="panel panel-primary">
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <strong>Cups of Coffee/day</strong>
+                    </div>
+                    <div class="col-xs-6">
+                        1
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <strong>Cups of Tea/day</strong>
+                    </div>
+                    <div class="col-xs-6">
+                        3
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <strong>Avg. Music Tempo (DnB)</strong>
+                    </div>
+                    <div class="col-xs-6">
+                        160-180 BPM
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <strong>Avg. Music Tempo (Hip-Hop/Rap)</strong>
+                    </div>
+                    <div class="col-xs-6">
+                        86 BPM
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <strong>Hours of sleep/weekday</strong>
+                    </div>
+                    <div class="col-xs-6">
+                        6
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <strong>Hours of sleep/weekend day</strong>
+                    </div>
+                    <div class="col-xs-6">
+                        12
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block javascript %}
+<script type="text/javascript">
+    $.get('/api/project', function(data) {
+        var proj = data.projects[0];
+        var $lp = $('#latest-project');
+        $lp.find('.project-title a').text(proj.name).prop('href', '/projects#'+proj.project_id);
+        $lp.find('.project-img').prop('src', proj.img.src).removeClass('hide');
+        $lp.find('.project-shortdesc').text(proj.short_desc);
+        var $pt = $lp.find('.project-tags');
+        for (var i in proj.categories) {
+            $pt.append('<li><span class="label label-primary"><a href="/projects#'+proj.categories[i]+'">'+proj.categories[i]+'</a></span></li>');
+        }
+    });
+</script>
+{% endblock %}
