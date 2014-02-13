@@ -47,9 +47,17 @@ code {
     border-bottom: 1px solid #151515;
 }
 
+.navbar .navbar-nav>li>a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 10px 0;
+}
+
 .navbar .navbar-nav>li.active>a,
 .navbar .navbar-nav>li.active>a:hover {
-    background-color: #0390c4;
+    background-color: #333;
+    border-radius: 3px;
+    font-weight: bold;
 }
 
 .navbar .navbar-nav .hidden-xs {
