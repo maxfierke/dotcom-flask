@@ -66,6 +66,19 @@ code {
     border-bottom: 1px solid #151515;
 }
 
+.navbar-default .navbar-brand {
+    color: #fff;
+    background-color: transparent;
+    font-size: 24px;
+    font-weight: 300;
+    transition: color 0.2s ease;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #0390b3;
+}
+
 .navbar .navbar-nav>li>a {
     padding-top: 5px;
     padding-bottom: 5px;
