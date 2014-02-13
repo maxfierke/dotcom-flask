@@ -1,8 +1,7 @@
 body {
-    padding-top: 70px;
-    background-image: url('/static/images/zwartevilt.png');
-    background-size: 531px 337px;
-    color: #c3c3c3;
+    padding-top: 50px;
+    background-color: #000;
+    font-family: 'Open Sans','Droid Sans','Helvetica Neue', Helvetica,Arial,sans-serif;
 }
 
 code {
@@ -31,6 +30,14 @@ code {
 }
 
 /* SITE SPECIFIC CLASSES */
+.primary-container {
+    background-color: #0c0c0c;
+}
+
+.container .jumbotron {
+    border-radius: 0;
+}
+
 .dropdown-contact {
     min-width: 540px;
 }
