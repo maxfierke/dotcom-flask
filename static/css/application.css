@@ -40,7 +40,19 @@ code {
 }
 
 .footer-page {
+    margin-top: 10px;
+    background-color: #090909;
+    padding-top: 20px;
     padding-bottom: 20px;
+}
+
+.footer-page a {
+    color: #fff;
+}
+
+.footer-page .list-inline {
+    margin: 0;
+    padding: 0;
 }
 
 .navbar {
