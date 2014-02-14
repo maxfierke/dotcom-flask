@@ -1,0 +1,24 @@
+{
+	"accounts": {
+		"github": {
+			"username": "maxfierke",
+			"href": "https://github.com/maxfierke/"
+		},
+		"googleplus": {
+			"username": "+MaxFierke",
+			"href": "https://plus.google.com/+MaxFierke"
+		},
+		"lastfm": {
+			"username": "m4xm4n",
+			"href": "http://www.last.fm/user/m4xm4n"
+		},
+		"linkedin": {
+			"username": "maxfierke",
+			"href": "http://www.linkedin.com/in/maxfierke/"
+		},
+		"twitter": {
+			"username": "m4xm4n",
+			"href": "https://twitter.com/m4xm4n"
+		}
+	}
+}

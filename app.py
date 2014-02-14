@@ -12,6 +12,9 @@ else:
 with open('projects.json', 'r') as projects_fh:
 	projects = json.load(projects_fh)['projects']
 
+with open('socialmedia.json', 'r') as socialmedia_fh:
+	socialmedia = json.load(socialmedia_fh)['accounts']
+
 # Utility Functions
 def request_wants_json():
     best = request.accept_mimetypes \
@@ -52,6 +55,16 @@ def api_project(project_id):
 @app.route('/api/project', methods=['GET'])
 def api_projects():
 	return jsonify(projects=projects)
+
+@app.route('/api/socialmedia/<service_name>', methods=['GET'])
+def api_socialmedia_service(service_name):
+	if service_name in socialmedia:
+		return jsonify(socialmedia[service_name])
+	abort(404)
+
+@app.route('/api/socialmedia', methods=['GET'])
+def api_socialmedia():
+	return jsonify(accounts=socialmedia)
 
 @app.route('/api', methods=['GET'])
 def api():
