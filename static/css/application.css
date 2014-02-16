@@ -182,7 +182,7 @@ code {
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
     .jumbotron-about h1 {
-        font-size: 28px;
+        font-size: 36px;
     }
     .jumbotron-about h2 {
         font-size: 20px;
@@ -191,7 +191,7 @@ code {
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
     .jumbotron-about h1 {
-        font-size: 34px;
+        font-size: 42px;
     }
     .jumbotron-about h2 {
         font-size: 28px;
