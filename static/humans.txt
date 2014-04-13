@@ -7,5 +7,5 @@
 
 /* SITE */
   Standards: HTML5, CSS3
-  Components: Flask, Jinja2, Werkzeug, Bootstrap 3, jQuery 2
+  Components: Flask, Jinja2, Werkzeug, Bootstrap 3, jQuery 2, Bootswatch Cyborg
   Software: Sublime Text, Nginx
