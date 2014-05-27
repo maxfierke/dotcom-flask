@@ -1,6 +1,30 @@
 {
 	"projects": [
 		{
+			"project_id": "lemu4-hackintosh",
+			"name": "Hackintosh on System76 Lemur Ultra 4",
+			"status": "Active",
+			"start_date": "April 2013",
+			"end_date": null,
+			"short_desc": "DSDT, SSDT, and boot config needed for running OS X 10.8.5 on a System76 Lemur Ultra 4",
+			"description": "DSDT, SSDT, and boot config needed for running OS X 10.8.5 on a System76 Lemur Ultra 4. Effort to get as much hardware working under Mac OS X as possible on my System76 Lemur Ultra 4. Non-working things include changing screen brightness, sound input, VGA, and HDMI audio.",
+			"img": {
+				"src": null,
+				"height": null,
+				"width": null
+			},
+			"links": [
+				{
+					"title": "Lemu4 Hackintosh config on Github",
+					"href": "https://github.com/maxfierke/Lemu4-Hackintosh-Config"
+				}
+			],
+			"categories": [
+				"current-projects",
+				"desktop"
+			]
+		},
+		{
 			"project_id": "watercooler",
 			"name": "WaterCooler",
 			"status": "Active",
@@ -92,7 +116,7 @@
 			"name":"Acidify",
 			"status": "Inactive",
 			"start_date": "July 2012",
-			"end_date": null,
+			"end_date": "April 2013",
 			"description": "Acidify is a wrapper for a number of scripts that compose the Android build system. It's purpose is to provide convenience for people building multiple versions of Android (such as CyanogenMod maintainers). It's original purpose was to make it easy for members of TeamAcid to switch between CyanogenMod versions with one command. It also provides a method for installing all the required packages needed for building Android (if using Ubuntu or Linux Mint), including CyanogenMod 7, 9, and the Android Open Kang Project. In addition, it supports local manifests, provides a function for deploying built OTA zips to the device, and uploading ready builds to Goo.im. The script is written in bash and is easily configurable.<br /><br />I'm beginning to rewrite the script in Python to make it more versatile, add a number of missing features, and overcome some of the limitations of what can be done in bash.",
 			"img": {
 				"src": null,
@@ -115,7 +139,7 @@
 		{
 			"project_id": "cyanogenmod-sgs4g",
 			"name":"CyanogenMod for the Samsung Galaxy S 4G",
-			"status": "Active (as part of TeamAcid)",
+			"status": "Sporatic Activity (as part of TeamAcid)",
 			"start_date": "March 2012",
 			"end_date": null,
 			"description": "We're an Android hacking team centered around the Samsung Galaxy S 4G and are in the process of porting the aftermarket Android distribution CyanogenMod to the device. Our ultimate goal is getting the device officially supported by the distribution. You can track what we have done by viewing our Github and by visiting the XDA threads linked on <a href=\"http://teamacid.github.com\">our website</a>.",
