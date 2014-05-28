@@ -130,7 +130,7 @@
         var proj = data.projects[0];
         var $lp = $('#latest-project');
         $lp.find('.project-title a').text(proj.name).prop('href', '/projects#'+proj.project_id);
-        if (prog.img.src) {
+        if (proj.img.src) {
             $lp.find('.project-img').prop('src', proj.img.src).removeClass('hide');
         }
         $lp.find('.project-shortdesc').text(proj.short_desc);
