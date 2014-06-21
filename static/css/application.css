@@ -24,6 +24,7 @@ code {
     border-color: #353535;
 }
 
+.img-thumbnail,
 .panel-primary {
     background-color: #151515;
     border-color: #272727;
@@ -48,7 +49,7 @@ code {
 
 .footer-page {
     margin-top: 10px;
-    background-color: #090909;
+    background-color: #0F0F0F;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -60,6 +61,10 @@ code {
 .footer-page .list-inline {
     margin: 0;
     padding: 0;
+}
+
+.img-about {
+    margin-top: 20px;
 }
 
 .navbar {
@@ -83,6 +88,7 @@ code {
     padding-top: 5px;
     padding-bottom: 5px;
     margin: 10px 0;
+    transition: all 0.2s ease;
 }
 
 .navbar .navbar-nav>li.active>a,
@@ -90,6 +96,7 @@ code {
     background-color: #333;
     border-radius: 3px;
     font-weight: bold;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,.5), 0 1px 0 rgba(255,255,255,.1);
 }
 
 .navbar .navbar-nav .hidden-xs {
@@ -101,16 +108,23 @@ code {
 }
 
 .jumbotron-about {
-    background-image: url('/static/images/coffee_stars_small.jpg'), url('/static/images/watercooler_sample.png');
-    background-position: right center, left center;
-    background-size: contain, cover;
-    background-repeat: no-repeat, no-repeat;
+    background-image: url('/static/images/watercooler_sample.png');/*, url('/static/images/watercooler_sample.png');*/
+    background-position: left center;/*, left center;*/
+    background-size: cover;/*, cover;*/
+    background-repeat: no-repeat;/*, no-repeat;*/
     margin-bottom: 0;
 }
 
 .jumbotron-about h1,
 .jumbotron-about h2 {
     background-color: rgba(34,34,34,0.9);
+    padding: 5px;
+}
+
+.jumbotron-about h1 {}
+
+.panel-latest-project {
+    margin-bottom: 0;
 }
 
 .panel-project {
@@ -121,12 +135,21 @@ code {
     background-color: #353535;
 }
 
-.project-title {
+.jumbotron-about .project-title {
+    font-size: 20px;
     margin-top: 0;
 }
 
 .project-img {
     margin-bottom: 1.2em;
+}
+
+.project-tags {
+    margin-bottom: 0;
+}
+
+.jumbotron-about .project-shortdesc {
+    font-size: 14px;
 }
 
 .socialnetworks img {
@@ -167,7 +190,7 @@ code {
 
 @media screen and (min-width: 768px) {
     .jumbotron-about {
-        padding: 30px !important;
+        padding: 20px !important;
     }
     .dl-tools {
         margin-bottom: 0;
