@@ -5,8 +5,8 @@ $('.nav a[href="'+window.location.pathname+'"]').parents('li').addClass('active'
 
 $('.js-tooltip').tooltip();
 
-$('#liame').hover(function () {
-	this.href = '\x6D\x61\x69\x6C\x74\x6F\x3A\x6D\x61\x78\x40\x6D\x61\x78\x66\x69\x65\x72\x6B\x65\x2E\x63\x6F\x6D'
+$('.liame').hover(function () {
+	this.href = '\x6D\x61\x69\x6C\x74\x6F\x3A' + this.text;
 })
 
 $("#all").click(function() {
