@@ -115,20 +115,3 @@
     </div>
 </div>
 {% endblock %}
-{% block javascript %}
-<script type="text/javascript">
-    $.get('/api/project', function(data) {
-        var proj = data.projects[0];
-        var $lp = $('#latest-project');
-        $lp.find('.project-title a').text(proj.name).prop('href', '/projects#'+proj.project_id);
-        if (proj.img.src) {
-            $lp.find('.project-img').prop('src', proj.img.src).removeClass('hide');
-        }
-        $lp.find('.project-shortdesc').text(proj.short_desc);
-        var $pt = $lp.find('.project-tags');
-        for (var i in proj.categories) {
-            $pt.append('<li><span class="label label-primary"><a href="/projects#'+proj.categories[i]+'">'+proj.categories[i]+'</a></span></li>');
-        }
-    });
-</script>
-{% endblock %}
