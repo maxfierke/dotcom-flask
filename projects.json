@@ -6,8 +6,8 @@
 			"status": "Active",
 			"start_date": "April 2013",
 			"end_date": null,
-			"short_desc": "DSDT, SSDT, and boot config needed for running OS X 10.8.5 on a System76 Lemur Ultra 4",
-			"description": "DSDT, SSDT, and boot config needed for running OS X 10.8.5 on a System76 Lemur Ultra 4. Effort to get as much hardware working under Mac OS X as possible on my System76 Lemur Ultra 4. Non-working things include changing screen brightness, sound input, VGA, and HDMI audio.",
+			"short_desc": "Patched DSDT, SSDT, and boot config needed for running OS X 10.8.5+ on a System76 Lemur Ultra 4",
+			"description": "DSDT, SSDT, and boot config needed for running OS X 10.8.5+ on a System76 Lemur Ultra 4. Effort to get as much hardware working under Mac OS X as possible on my System76 Lemur Ultra 4. Non-working things include changing screen brightness, sound input, VGA, and HDMI audio.",
 			"img": {
 				"src": null,
 				"height": null,
