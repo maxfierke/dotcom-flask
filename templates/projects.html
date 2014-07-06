@@ -3,36 +3,47 @@
 <div class="page-header">
     <h1>Projects</h1>
 </div>
-<div id="js-project-filter" class="btn-toolbar" role="toolbar">
+<div class="btn-toolbar" role="toolbar">
     <div class="btn-group btn-group-sm">
-        <a href="#all" id="all" class="btn btn-primary">All</a>
-        <a href="#current-projects" id="current-projects" class="btn btn-default js-filter">Current</a>
-        <a href="#past-projects" id="past-projects" class="btn btn-default js-filter">Past</a>
+        <button id="all" class="btn btn-primary">All</button>
+        <button id="current-projects" class="btn btn-default js-filter">Current</button>
+        <button id="past-projects" class="btn btn-default js-filter">Past</button>
     </div>
     <div class="btn-group btn-group-sm">
-        <a href="#web" id="web" class="btn btn-default js-filter">Web</a>
-        <a href="#android" id="android" class="btn btn-default js-filter">Android</a>
-        <a href="#desktop" id="desktop" class="btn btn-default js-filter">Desktop</a>
-        <a href="#linux" id="linux" class="btn btn-default js-filter">Linux</a>
-        <a href="#crypto" id="crypto" class="btn btn-default js-filter">Crypto</a>
+        {% for tag in project_tags %}
+            <button id="{{ tag.slug }}" class="btn btn-default js-filter">{{ tag.name }}</button>
+        {% endfor %}
     </div>
 </div>
 <hr />
 {% for project in projects %}
-<section id="{{ project.project_id }}" class="panel panel-default panel-project {% for category in project.categories %}{{ category }} {% endfor %}">
+<section id="{{ project.project_id }}" class="panel panel-default panel-project {% for category in project.categories %}{{ category.slug }} {% endfor %}{% if project.end_date is none %}current-projects{% else %}past-projects{% endif %}">
+    <div class="panel-heading">
+        <h4 class="panel-title">
+            {{ project.name }}
+            <span class="label label-{{ project.status.label }}">{{ project.status.name }}</span>
+            <p class="pull-right">{{ project.start_date.strftime('%B %Y') }} &mdash; {% if project.end_date is none %}present{% else %}{{ project.end_date.strftime('%B %Y') }}{% endif %}</p>
+        </h4>
+    </div>
     <div class="panel-body">
-        <div class="col-xs-3">
-            <img class="img-responsive"
-                 src="{% if project.img.src is none %}/static/images/project-noimg.png{% else %}{{ project.img.src }}{% endif %}"
-                 alt="{{ project.name }}" />
-        </div>
-        <div class="col-xs-9">
-            <h4><span class="ebleu">{{ project.name }}</span><small class="text-muted"> - {{ project.status }}</small></h4>
-            <p>{{ project.start_date }}-{% if project.end_date is none %}present{% else %}{{ project.end_date }}{% endif %}</p>
-            <p>{{ project.description|safe }}</p>
-            {% for link in project.links %}
-            <p><a href="{{ link.href }}">{{ link.title }}</a></p>
-            {% endfor %}
+        <div class="row">
+            <div class="{% if project.image is none %}col-xs-12{% else %}col-xs-9{% endif %}">
+                <p>{{ project.description|safe }}</p>
+                <ul class="fa-ul">
+                {% if project.github is not none %}
+                    <li><span class="fa-li fa fa-lg fa-github"></span><a href="https://github.com/{{ project.github }}">{{ project.name }} on GitHub</a></li>
+                {% endif %}
+                {% for link in project.links %}
+                    <li><span class="fa-li fa fa-lg fa-link"></span><a href="{{ link.url }}">{{ link.title }}</a></li>
+                {% endfor %}
+                </ul>
+            </div>
+            {% if project.image is not none %}
+            <div class="col-sm-3 hidden-xs">
+                <img class="img-responsive" alt="{{ project.name }}"
+                     src="{{ url_for('api_project_thumb', project_id=project.project_id) }}" />
+            </div>
+            {% endif %}
         </div>
     </div>
 </section>

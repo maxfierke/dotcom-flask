@@ -10,6 +10,10 @@ code {
 }
 
 /* BOOTSTRAP OVERRIDES */
+.label {
+    font-weight: normal;
+}
+
 .label a {
     color: #fff;
 }
@@ -25,7 +29,7 @@ code {
 }
 
 .img-thumbnail,
-.panel-primary {
+.panel {
     background-color: #151515;
     border-color: #272727;
 }
@@ -90,6 +94,7 @@ code {
 }
 
 .navbar .navbar-nav>li>a {
+    border: 1px solid transparent;
     padding-top: 5px;
     padding-bottom: 5px;
     margin: 10px 0;
@@ -98,10 +103,7 @@ code {
 
 .navbar .navbar-nav>li.active>a,
 .navbar .navbar-nav>li.active>a:hover {
-    background-color: #333;
-    border-radius: 3px;
     font-weight: bold;
-    box-shadow: inset 0 1px 3px rgba(0,0,0,.5), 0 1px 0 rgba(255,255,255,.1);
 }
 
 .navbar .navbar-nav .hidden-xs {
@@ -126,18 +128,26 @@ code {
     padding: 5px;
 }
 
-.jumbotron-about h1 {}
-
 .panel-latest-project {
     margin-bottom: 0;
 }
 
-.panel-project {
+.panel-project > .panel-body {
     transition: background-color 0.5s linear;
 }
 
-.panel-project:hover {
-    background-color: #353535;
+.panel-project > .panel-heading {
+    background-color: #121212;
+    color: #c3c3c3;
+}
+
+.panel-project:hover > .panel-body {
+    background-color: #232323;
+}
+
+.panel-project .label {
+    display: inline-block;
+    margin-left: 5px;
 }
 
 .jumbotron-about .project-title {
@@ -179,6 +189,24 @@ code {
     }
     .navbar .navbar-nav .visible-xs {
         display: inline-block !important;
+    }
+
+    .navbar-collapse {
+        background-color: #0f0f0f;
+        border-color: #151515;
+    }
+
+    .navbar .navbar-toggle {
+        border-color: transparent;
+    }
+
+    .navbar .navbar-toggle:focus,
+    .navbar .navbar-toggle:hover {
+        background-color: transparent;
+    }
+
+    .navbar-toggle .icon-bar {
+        height: 3px;
     }
 
     .jumbotron-about {
