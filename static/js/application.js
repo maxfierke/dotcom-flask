@@ -56,7 +56,7 @@ jQuery(function ($) {
                     $lp.find('.project-shortdesc').text(proj.short_description);
                     var $pt = $lp.find('.project-tags');
                     for (var i in proj.categories) {
-                        $pt.append('<li><span class="label label-primary"><a href="/projects#'+proj.categories[i].slug+'">'+proj.categories[i].name+'</a></span></li>');
+                        $pt.append('<li><a class="btn btn-primary btn-xs" href="/projects#'+proj.categories[i].slug+'">'+proj.categories[i].name+'</a></li>');
                     }
                 });
             }
