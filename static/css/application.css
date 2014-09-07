@@ -55,7 +55,7 @@ code {
     margin-top: 10px;
     background-color: #0F0F0F;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .footer-page a {
@@ -115,17 +115,20 @@ code {
 }
 
 .jumbotron-about {
-    background-image: url('/static/images/watercooler_sample.png');/*, url('/static/images/watercooler_sample.png');*/
-    background-position: left center;/*, left center;*/
-    background-size: cover;/*, cover;*/
-    background-repeat: no-repeat;/*, no-repeat;*/
+    background-image: url('/static/images/minnehaha_waterfall.jpg');
+    background-position: left center;
+    background-size: cover;
+    background-repeat: no-repeat;
     margin-bottom: 0;
 }
 
 .jumbotron-about h1,
 .jumbotron-about h2 {
-    background-color: rgba(34,34,34,0.9);
-    padding: 5px;
+    background-color: rgba(39,39,39, 0.9);
+    border-color: #272727;
+    border-radius: 3px;
+    display: inline-block;
+    padding: 7px;
 }
 
 .panel-latest-project {
@@ -210,7 +213,7 @@ code {
     }
 
     .jumbotron-about {
-        background-image: url('/static/images/watercooler_sample.png');
+        background-image: url('/static/images/minnehaha_waterfall.jpg');
         background-position: left center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -250,6 +253,6 @@ code {
         font-size: 42px;
     }
     .jumbotron-about h2 {
-        font-size: 28px;
+        font-size: 22px;
     }
 }
